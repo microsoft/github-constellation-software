@@ -1,0 +1,12 @@
+# CODEOWNERS for microsoft/github-constellation-software
+#
+# Each line is a file pattern followed by one or more owners. The last
+# matching pattern wins. See:
+# https://docs.github.com/articles/about-code-owners
+#
+# This file is intentionally inert (everything commented out) so PRs are not
+# blocked while the owning GitHub team is being provisioned. Uncomment and
+# replace the placeholder team handle below once the team handle is final.
+
+# Default owners for everything in the repo
+# *       @microsoft/github-csi-maintainers
