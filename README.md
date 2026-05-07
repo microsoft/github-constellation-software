@@ -16,6 +16,10 @@
 
 </div>
 
+> 💡 **CSI portcos:** 35% off GitHub Enterprise Cloud and Copilot when billed
+> via your portfolio's (or CSI's) Azure subscription — **not** a credit card.
+> → [How to claim the discount](#-csi-pricing-35-via-azure-billing)
+
 ---
 
 ## 📅 CSI Developer Days
@@ -110,6 +114,64 @@ chat modes, agentic workflows, code review, and team-scale adoption.
 - **AI Coding with GitHub Copilot — Developer Enablement Series for CSI** —
   Multi-part workshop series tailored for CSI portco engineering teams.
   [aka.ms/github-constellation-software-dev-enablement-series](https://aka.ms/github-constellation-software-dev-enablement-series)
+
+---
+
+## 🏷 CSI Pricing (35%) via Azure Billing
+
+CSI portfolio companies qualify for **35% off GitHub Enterprise Cloud and
+GitHub Copilot (Business and Enterprise)** — but **only when billing flows
+through an Azure subscription tied to your portco, your operating group, or
+CSI**.
+
+> ⚠️ **Credit-card billing on GitHub is NOT eligible for the CSI discount.**
+> Personal credit cards and PayPal payment methods on a GitHub enterprise
+> account do not qualify. To get the 35% rate, the GitHub enterprise account
+> must be connected to an **Azure subscription** owned by your portco, your
+> operating group, or CSI.
+
+#### Eligible SKUs
+
+- **GitHub Enterprise Cloud**
+- **GitHub Copilot Business**
+- **GitHub Copilot Enterprise**
+
+#### Connect your Azure subscription to GitHub
+
+1. **Identify the right Azure subscription** — owned by your portco,
+   operating group, or CSI. (Don't use a personal MSDN / Pay-As-You-Go
+   subscription you opened on a credit card.)
+2. **Confirm permissions** — you'll need an **Owner** or **Billing manager**
+   role on the GitHub enterprise account *and* **Owner** rights on the Azure
+   subscription. A tenant-level admin may also need to grant consent to the
+   Azure permission-validation app.
+3. **In GitHub** — go to **Enterprise → Settings → Billing & Licensing →
+   Payment information → Add Azure Subscription**, then sign in with the
+   Azure account that owns the subscription.
+4. **In Azure** — approve the Subscription Permission Validation request to
+   complete the connection. Future GitHub usage (seats + UBB metered usage)
+   will then bill to that Azure subscription.
+
+#### Documentation
+
+- **About enterprise billing** — Concepts and supported payment methods. [docs.github.com](https://docs.github.com/en/enterprise-cloud@latest/enterprise-onboarding/getting-started-with-your-enterprise/about-enterprise-billing)
+- **Connecting an Azure subscription (how-to)** — Step-by-step procedure. [docs.github.com](https://docs.github.com/en/enterprise-cloud@latest/billing/how-tos/set-up-payment/connect-azure-sub)
+- **Azure subscription payments (concept)** — How GitHub enterprise usage shows up on your Azure invoice. [docs.github.com](https://docs.github.com/en/enterprise-cloud@latest/billing/concepts/azure-subscriptions)
+- **Billing through Azure subscriptions (reference)** — Detailed reference for what's billable through Azure and how. [docs.github.com](https://docs.github.com/en/enterprise-cloud@latest/billing/reference/azure-billing)
+
+#### Cost management & chargeback
+
+For portcos that allocate GitHub costs back to teams or products on Azure:
+
+- **Azure Cost Management overview** — Cost analysis, budgets, alerts, and exports. [learn.microsoft.com](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/overview-cost-management)
+- **Tag your Azure resources** — Use tags on the Azure subscription / resource group to attribute GitHub line items to the right team, product, or cost center. [learn.microsoft.com](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources)
+
+#### Need help?
+
+If you hit issues during the connect-to-Azure flow (admin consent,
+ownership mismatches, eligibility questions), email
+[githubConstellationSoftwareInc@microsoft.com](mailto:githubConstellationSoftwareInc@microsoft.com)
+and the GitHub @ CSI team will help unblock you.
 
 ---
 

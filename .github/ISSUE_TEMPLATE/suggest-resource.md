@@ -18,6 +18,7 @@ Pick the README section you think fits best (or suggest a new one):
 
 - [ ] CSI Developer Days
 - [ ] GitHub Migrations
+- [ ] CSI Pricing (Azure Billing)
 - [ ] GitHub Copilot — Learning & Skilling
 - [ ] GitHub Copilot — Developer Enablement Series
 - [ ] Usage-Based Billing (UBB)
