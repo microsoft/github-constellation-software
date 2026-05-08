@@ -1,4 +1,8 @@
 <div align="center">
+<img width="474" height="138" alt="ms+gh" src="https://github.com/user-attachments/assets/fcd7622d-50bd-4080-8361-27add0d3e650" />
+</div>
+
+<div align="center">
 
 # 🌐 GitHub @ Constellation Software
 
@@ -42,46 +46,18 @@ and Q&A with Microsoft and GitHub product teams.
 
 ## 🚚 GitHub Migrations
 
-Many CSI portcos are moving to GitHub from Bitbucket Server / Data Center,
-Bitbucket Cloud, Azure DevOps Repos, GitLab self-managed, or Subversion. This
-section is your starting point.
+CSI portcos move to GitHub from Bitbucket Server / Cloud, Azure DevOps Repos,
+GitLab, and Subversion.
 
-#### Plan your migration
-- **GitHub Enterprise migration overview** — Concepts, planning, and the
-  supported source systems.
-  [docs.github.com/migrations](https://docs.github.com/en/migrations)
-- **Migration paths to GitHub Enterprise Cloud** — Choose the right tooling
-  based on where your code lives today.
-  [docs.github.com](https://docs.github.com/en/migrations/overview/migration-paths-to-github)
+> 📧 **Planning a migration?** Email
+> [githubConstellationSoftwareInc@microsoft.com](mailto:githubConstellationSoftwareInc@microsoft.com)
+> first. We'll match you with the right tooling, runbook, and (if needed)
+> migration partner — instead of you piecing it together from docs alone.
 
-#### Source-specific guides
-- **From Bitbucket Server / Data Center** — Use **GitHub Enterprise Importer
-  (GEI)** with the BBS migrator (`gh bbs2gh`).
-  [docs.github.com](https://docs.github.com/en/migrations/using-github-enterprise-importer/migrating-from-bitbucket-server-to-github-enterprise-cloud)
-- **From Bitbucket Cloud** — Migrate repositories to GitHub Enterprise Cloud
-  using GEI.
-  [docs.github.com](https://docs.github.com/en/migrations/using-github-enterprise-importer/migrating-from-bitbucket-cloud-to-github-enterprise-cloud)
-- **From Azure DevOps Repos** — Use GEI with the ADO migrator (`gh ado2gh`).
-  [docs.github.com](https://docs.github.com/en/migrations/using-github-enterprise-importer/migrating-from-azure-devops-to-github-enterprise-cloud)
-- **From GitLab (self-managed or GitLab.com)** — Use GEI's GitLab migrator.
-  [docs.github.com](https://docs.github.com/en/migrations/using-github-enterprise-importer/migrating-between-github-products/migrating-repositories-from-gitlab-to-github-enterprise-cloud)
-- **From Subversion (SVN)** — Use `git-svn` to convert history, then push to
-  GitHub.
-  [docs.github.com](https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/importing-a-subversion-repository)
+For self-serve reading:
 
-#### Tooling
-- **GitHub Enterprise Importer (GEI) — `gh-gei` CLI** — The primary,
-  supported tool family for migrations.
-  [github.com/github/gh-gei](https://github.com/github/gh-gei)
-- **`gh-ado2gh`** — Azure DevOps → GitHub extension to the `gh` CLI.
-  [github.com/github/gh-ado2gh](https://github.com/github/gh-ado2gh)
-- **`gh-bbs2gh`** — Bitbucket Server → GitHub extension to the `gh` CLI.
-  [github.com/github/gh-bbs2gh](https://github.com/github/gh-bbs2gh)
-
-#### Reference
-- **Pre-migration checklist & runbooks** — Best practices for org structure,
-  identity (SAML/SCIM), and cutover planning.
-  [docs.github.com](https://docs.github.com/en/migrations/using-github-enterprise-importer/preparing-to-migrate-with-github-enterprise-importer/overview-of-a-migration-with-github-enterprise-importer)
+- **GitHub Enterprise migration overview** — [docs.github.com/migrations](https://docs.github.com/en/migrations)
+- **Migration paths to GitHub Enterprise Cloud** — [docs.github.com](https://docs.github.com/en/migrations/overview/migration-paths-to-github)
 
 ---
 
@@ -189,14 +165,11 @@ Resources about Copilot's move to usage-based billing.
 
 ## 🏛 Governance & Architecture
 
-CSI's federated, multi-portco model means each operating group and portco
-runs GitHub on its own terms. These resources help you do that well.
+For portcos running GitHub at scale across many orgs and operating groups:
 
-- **Agentic Governance (Microsoft APM)** — Microsoft's framework for governing teams of AI agents at enterprise scale. [docs](https://microsoft.github.io/apm/) · [repo](https://github.com/microsoft/apm)
-- **GitHub Well-Architected Framework** — GitHub's official guidance for well-architected systems on the GitHub platform, including Copilot. [wellarchitected.github.com](https://wellarchitected.github.com/)
-- **GitHub Enterprise Cloud — managing multiple organizations** — Patterns for running many orgs under one enterprise (relevant for portco-per-org topologies). [docs.github.com](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-your-enterprise-account/about-enterprise-accounts)
-- **Enterprise Managed Users (EMU)** — Identity-managed user accounts for tighter control over access and provisioning. [docs.github.com](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/understanding-iam-for-enterprises/about-enterprise-managed-users)
-- **GitHub audit log streaming** — Stream audit log events to your SIEM for portfolio-wide visibility. [docs.github.com](https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/streaming-the-audit-log-for-your-enterprise)
+- **GitHub Well-Architected Framework** — Reference architecture for GitHub & Copilot. [wellarchitected.github.com](https://wellarchitected.github.com/)
+- **Multiple orgs under one enterprise** — Patterns for portco-per-org topologies. [docs.github.com](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-your-enterprise-account/about-enterprise-accounts)
+- **Enterprise Managed Users (EMU)** — Identity-managed access & provisioning. [docs.github.com](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/understanding-iam-for-enterprises/about-enterprise-managed-users)
 
 ---
 
