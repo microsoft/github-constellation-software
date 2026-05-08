@@ -26,21 +26,15 @@
 
 ---
 
-## 📅 CSI Developer Days
+## 📅 CSI Dev Days
 
-CSI Developer Days is the GitHub @ CSI team's **bi-weekly developer event
-series** for engineers across the Constellation Software portfolio. Sessions
-cover GitHub fundamentals, migrations, Copilot enablement, agentic workflows,
-and Q&A with Microsoft and GitHub product teams.
+CSI Dev Days is the GitHub @ CSI team's **bi-weekly developer event series**
+for engineers across the Constellation Software portfolio. Sessions cover
+GitHub fundamentals, migrations, Copilot enablement, agentic workflows,
+multi-part workshops, office hours, and Q&A with Microsoft and GitHub
+product teams.
 
-<!-- placeholder: provision aka.ms/github-constellation-software-dev-days before publishing -->
-- **CSI Developer Days — Bi-weekly series** — Open to engineers across all
-  CSI operating groups (Volaris, Harris, Vela, Jonas, Perseus, Topicus, and
-  others). Sign up to be notified about upcoming sessions.
-  [aka.ms/github-constellation-software-dev-days](https://aka.ms/github-constellation-software-dev-days)
-- **Apply for workshops, office hours & invite-only events** — Get on the
-  GitHub @ CSI team's invite list.
-  [aka.ms/github-constellation-software-events-form](https://aka.ms/github-constellation-software-events-form)
+- **Sign up & upcoming sessions** → [aka.ms/CSIDevDaysSignUp](https://aka.ms/CSIDevDaysSignUp)
 
 ---
 
@@ -81,18 +75,6 @@ For self-serve reading:
 
 ---
 
-## 🛠 GitHub Copilot — Developer Enablement Series
-
-A multi-part series for CSI portco engineering teams covering prompt patterns,
-chat modes, agentic workflows, code review, and team-scale adoption.
-
-<!-- placeholder: provision aka.ms/github-constellation-software-dev-enablement-series before publishing -->
-- **AI Coding with GitHub Copilot — Developer Enablement Series for CSI** —
-  Multi-part workshop series tailored for CSI portco engineering teams.
-  [aka.ms/github-constellation-software-dev-enablement-series](https://aka.ms/github-constellation-software-dev-enablement-series)
-
----
-
 ## 🏷 CSI Pricing (35%) via Azure Billing
 
 CSI portfolio companies qualify for **35% off GitHub Enterprise Cloud and
@@ -114,24 +96,11 @@ CSI**.
 
 #### Connect your Azure subscription to GitHub
 
-1. **Identify the right Azure subscription** — owned by your portco,
-   operating group, or CSI. (Don't use a personal MSDN / Pay-As-You-Go
-   subscription you opened on a credit card.)
-2. **Confirm permissions** — you'll need an **Owner** or **Billing manager**
-   role on the GitHub enterprise account *and* **Owner** rights on the Azure
-   subscription. A tenant-level admin may also need to grant consent to the
-   Azure permission-validation app.
-3. **In GitHub** — go to **Enterprise → Settings → Billing & Licensing →
-   Payment information → Add Azure Subscription**, then sign in with the
-   Azure account that owns the subscription.
-4. **In Azure** — approve the Subscription Permission Validation request to
-   complete the connection. Future GitHub usage (seats + UBB metered usage)
-   will then bill to that Azure subscription.
+See [Connecting an Azure subscription (docs.github.com)](https://docs.github.com/en/enterprise-cloud@latest/billing/how-tos/set-up-payment/connect-azure-sub) for the step-by-step procedure.
 
 #### Documentation
 
 - **About enterprise billing** — Concepts and supported payment methods. [docs.github.com](https://docs.github.com/en/enterprise-cloud@latest/enterprise-onboarding/getting-started-with-your-enterprise/about-enterprise-billing)
-- **Connecting an Azure subscription (how-to)** — Step-by-step procedure. [docs.github.com](https://docs.github.com/en/enterprise-cloud@latest/billing/how-tos/set-up-payment/connect-azure-sub)
 - **Azure subscription payments (concept)** — How GitHub enterprise usage shows up on your Azure invoice. [docs.github.com](https://docs.github.com/en/enterprise-cloud@latest/billing/concepts/azure-subscriptions)
 - **Billing through Azure subscriptions (reference)** — Detailed reference for what's billable through Azure and how. [docs.github.com](https://docs.github.com/en/enterprise-cloud@latest/billing/reference/azure-billing)
 
