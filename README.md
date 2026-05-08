@@ -4,7 +4,7 @@
 
 <div align="center">
 
-# 🌐 GitHub @ Constellation Software
+# GitHub @ Constellation Software
 
 > A curated public hub of **GitHub** and **GitHub Copilot** resources for
 > Constellation Software Inc. (CSI) portfolio companies — maintained by the
@@ -25,6 +25,9 @@
 > → [How to claim the discount](#-csi-pricing-35-via-azure-billing)
 
 ---
+<div align="center">
+<img width="1920" height="1080" alt="CSI Dev Days" src="https://github.com/user-attachments/assets/3cdfe17d-da99-4145-8928-efdc6712bedc" />
+</div>
 
 ## 📅 CSI Dev Days
 
