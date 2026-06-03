@@ -122,8 +122,10 @@ and the GitHub @ CSI team will help unblock you.
 
 ## 💳 Usage-Based Billing (UBB)
 
-Resources about Copilot's move to usage-based billing.
+Resources to help CSI portcos prepare for Copilot's move to usage-based
+billing on June 1.
 
+- **🌐 GitHub @ CSI team recommendations** — Practical playbook for CSI portcos: what's changing June 1, a 5-step rollout plan, what not to overreact to, how UBB interacts with the 35% Azure-billing discount, and curated UBB resources including interactive tools and checklists. [usage-based-billing/](./usage-based-billing/)
 - **Announcement (blog)** — GitHub Copilot is moving to usage-based billing. [github.blog](https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/)
 - **UBB documentation** — Concept docs for usage-based billing in organizations and enterprises. [docs.github.com](https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-organizations-and-enterprises)
 - **UBB pricing & models** — Reference for Copilot billing models and pricing. [docs.github.com](https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing)
