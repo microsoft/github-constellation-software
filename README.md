@@ -37,7 +37,13 @@ GitHub fundamentals, migrations, Copilot enablement, agentic workflows,
 multi-part workshops, office hours, and Q&A with Microsoft and GitHub
 product teams.
 
+> 🎥 **Catch up on past sessions** — full CSI Dev Days recording playlist →
+> [aka.ms/CSIDevDaysRecordings](https://aka.ms/CSIDevDaysRecordings)
+
 - **Sign up & upcoming sessions** → [aka.ms/CSIDevDaysSignUp](https://aka.ms/CSIDevDaysSignUp)
+- **Next sessions:**
+  - **CSI Dev Days! #2** — June 18 — [Register on Teams](https://msit.events.teams.microsoft.com/event/msit.751fb5b1-363f-4598-8571-871b4b041d1f@72f988bf-86f1-41af-91ab-2d7cd011db47)
+  - **CSI Dev Days! #3** — July 2 — [Register on Teams](https://msit.events.teams.microsoft.com/event/msit.54a3b104-2d6a-4382-a731-6b8b1627a504@72f988bf-86f1-41af-91ab-2d7cd011db47)
 
 ---
 
@@ -47,9 +53,14 @@ CSI portcos move to GitHub from Bitbucket Server / Cloud, Azure DevOps Repos,
 GitLab, and Subversion.
 
 > 📧 **Planning a migration?** Email
-> [githubConstellationSoftwareInc@microsoft.com](mailto:githubConstellationSoftwareInc@microsoft.com)
+> [DevsAtCSI@microsoft.com](mailto:DevsAtCSI@microsoft.com)
 > first. We'll match you with the right tooling, runbook, and (if needed)
 > migration partner — instead of you piecing it together from docs alone.
+
+> 📝 **Already decided to move?** Kick off the engagement by filling out the
+> [Volaris Migrate to GitHub signup form](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRzMcMidQhp9MgQdQoHo9OjdURDVTTFNHOFpLQlpYTFZPQ1Y4RzMyR0s3Ni4u)
+> — the GitHub @ CSI team uses this to scope, prioritize, and pair you with
+> the right migration support.
 
 For self-serve reading:
 
@@ -91,6 +102,16 @@ CSI**.
 > must be connected to an **Azure subscription** owned by your portco, your
 > operating group, or CSI.
 
+> ✅ **Two benefits of the Azure-billed path:**
+>
+> 1. **35% discount** on GitHub Enterprise Cloud and GitHub Copilot
+>    (Business / Enterprise) SKUs.
+> 2. **Prioritized GitHub support** — Azure-connected CSI enterprises are
+>    routed through the GitHub @ CSI team at Microsoft, who can escalate
+>    tickets and coordinate directly with GitHub product and support teams.
+>    Enterprises billed outside this path do not get this CSI-routed
+>    escalation benefit.
+
 #### Eligible SKUs
 
 - **GitHub Enterprise Cloud**
@@ -118,7 +139,7 @@ For portcos that allocate GitHub costs back to teams or products on Azure:
 
 If you hit issues during the connect-to-Azure flow (admin consent,
 ownership mismatches, eligibility questions), email
-[githubConstellationSoftwareInc@microsoft.com](mailto:githubConstellationSoftwareInc@microsoft.com)
+[DevsAtCSI@microsoft.com](mailto:DevsAtCSI@microsoft.com)
 and the GitHub @ CSI team will help unblock you.
 
 ---
@@ -149,7 +170,7 @@ For portcos running GitHub at scale across many orgs and operating groups:
 
 ## 💬 Get in Touch
 
-- **Email us** — [githubConstellationSoftwareInc@microsoft.com](mailto:githubConstellationSoftwareInc@microsoft.com)
+- **Email us** — [DevsAtCSI@microsoft.com](mailto:DevsAtCSI@microsoft.com)
 - **Open an issue** to suggest a resource, report a broken link, or request a topic — see [issue templates](.github/ISSUE_TEMPLATE) and [CONTRIBUTING.md](CONTRIBUTING.md).
 - **Through your Microsoft account team** — they can route you to the GitHub @ CSI team directly.
 

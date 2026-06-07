@@ -127,7 +127,7 @@ Practical implications for CSI portcos:
   See
   [Connecting an Azure subscription](https://docs.github.com/en/enterprise-cloud@latest/billing/how-tos/set-up-payment/connect-azure-sub)
   in the docs, then email
-  [githubConstellationSoftwareInc@microsoft.com](mailto:githubConstellationSoftwareInc@microsoft.com)
+  [DevsAtCSI@microsoft.com](mailto:DevsAtCSI@microsoft.com)
   if you hit issues with admin consent, ownership mismatches, or eligibility
   questions.
 
@@ -175,6 +175,6 @@ preparing their rollout:
 
 Questions, portco-specific scenarios, or workshop nominations? Reach the
 GitHub @ CSI team at
-[githubConstellationSoftwareInc@microsoft.com](mailto:githubConstellationSoftwareInc@microsoft.com),
+[DevsAtCSI@microsoft.com](mailto:DevsAtCSI@microsoft.com),
 or open an issue using the templates in
 [.github/ISSUE_TEMPLATE](../.github/ISSUE_TEMPLATE).
