@@ -29,7 +29,7 @@ Copilot. For product issues:
 
 For questions, partnership requests, or to get on the invite list for events
 like CSI Dev Days, email
-[githubConstellationSoftwareInc@microsoft.com](mailto:githubConstellationSoftwareInc@microsoft.com).
+[DevsAtCSI@microsoft.com](mailto:DevsAtCSI@microsoft.com).
 
 You can also reach out through your existing Microsoft account team — they
 can route you to the GitHub @ CSI team directly.
