@@ -20,9 +20,10 @@
 
 </div>
 
-> 💡 **CSI portcos:** 35% off GitHub Enterprise Cloud and Copilot when billed
-> via your portfolio's (or CSI's) Azure subscription — **not** a credit card.
-> → [How to claim the discount](#-csi-pricing-35-via-azure-billing)
+> 💡 **CSI portcos:** use your CSI discount on GitHub Enterprise and GitHub
+> Copilot when billed via your portfolio's (or CSI's) Azure subscription —
+> **not** a credit card.
+> → [How to claim the discount](#-csi-pricing-via-azure-billing)
 
 ---
 <div align="center">
@@ -89,22 +90,29 @@ For self-serve reading:
 
 ---
 
-## 🏷 CSI Pricing (35%) via Azure Billing
+## 🏷 CSI Pricing via Azure Billing
 
-CSI portfolio companies qualify for **35% off GitHub Enterprise Cloud and
-GitHub Copilot (Business and Enterprise)** — but **only when billing flows
-through an Azure subscription tied to your portco, your operating group, or
-CSI**.
+CSI portfolio companies qualify for a **CSI discount on GitHub Enterprise
+Cloud and GitHub Copilot (Business and Enterprise)** — but **only when
+billing flows through an Azure subscription tied to your portco, your
+operating group, or CSI**.
+
+> 📧 **Want the discount amount and how to activate it?** Email
+> [DevsAtCSI@microsoft.com](mailto:DevsAtCSI@microsoft.com).
+> The GitHub @ CSI team will share the current CSI rate and walk you
+> through activation — primarily connecting an **Azure subscription tied
+> to a parent CSI entity** (your portco, your operating group, or CSI) to
+> your GitHub enterprise account.
 
 > ⚠️ **Credit-card billing on GitHub is NOT eligible for the CSI discount.**
 > Personal credit cards and PayPal payment methods on a GitHub enterprise
-> account do not qualify. To get the 35% rate, the GitHub enterprise account
+> account do not qualify. To get the CSI rate, the GitHub enterprise account
 > must be connected to an **Azure subscription** owned by your portco, your
 > operating group, or CSI.
 
 > ✅ **Two benefits of the Azure-billed path:**
 >
-> 1. **35% discount** on GitHub Enterprise Cloud and GitHub Copilot
+> 1. **CSI portco discount** on GitHub Enterprise Cloud and GitHub Copilot
 >    (Business / Enterprise) SKUs.
 > 2. **Prioritized GitHub support** — Azure-connected CSI enterprises are
 >    routed through the GitHub @ CSI team at Microsoft, who can escalate
@@ -149,7 +157,7 @@ and the GitHub @ CSI team will help unblock you.
 Resources to help CSI portcos prepare for Copilot's move to usage-based
 billing on June 1.
 
-- **🌐 GitHub @ CSI team recommendations** — Practical playbook for CSI portcos: what's changing June 1, a 5-step rollout plan, what not to overreact to, how UBB interacts with the 35% Azure-billing discount, and curated UBB resources including interactive tools and checklists. [usage-based-billing/](./usage-based-billing/)
+- **🌐 GitHub @ CSI team recommendations** — Practical playbook for CSI portcos: what's changing June 1, a 5-step rollout plan, what not to overreact to, how UBB interacts with the CSI Azure-billing discount, and curated UBB resources including interactive tools and checklists. [usage-based-billing/](./usage-based-billing/)
 - **Announcement (blog)** — GitHub Copilot is moving to usage-based billing. [github.blog](https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/)
 - **UBB documentation** — Concept docs for usage-based billing in organizations and enterprises. [docs.github.com](https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-organizations-and-enterprises)
 - **UBB pricing & models** — Reference for Copilot billing models and pricing. [docs.github.com](https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing)

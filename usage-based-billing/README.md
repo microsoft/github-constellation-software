@@ -106,11 +106,11 @@ selection.
 
 UBB credit consumption and any overage spend flow through the **same
 Azure-connected GitHub enterprise** that bills your seats — so the
-**35% CSI portco discount continues to apply** to both seat charges and
-UBB usage line items, as long as billing is on an Azure subscription owned
-by your portco, your operating group, or CSI (credit-card billing is **not**
-eligible — see the root README's
-[CSI Pricing (35%) via Azure Billing](../README.md#-csi-pricing-35-via-azure-billing)
+**CSI portco discount continues to apply** to both seat charges
+and UBB usage line items, as long as billing is on an Azure subscription
+owned by your portco, your operating group, or CSI (credit-card billing is
+**not** eligible — see the root README's
+[CSI Pricing via Azure Billing](../README.md#-csi-pricing-via-azure-billing)
 section).
 
 Practical implications for CSI portcos:
