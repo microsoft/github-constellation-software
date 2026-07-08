@@ -151,23 +151,23 @@ preparing their rollout:
 - **Webinar recap (on-demand video)** — Recap of the UBB customer briefing.
   [github.ondemand.goldcast.io](https://github.ondemand.goldcast.io/on-demand/9c23608e-dc81-41f3-82c2-6629c9a26f36)
 
-### Interactive tools & checklists
+### Interactive tools, articles & checklists
 
-> Community / partner-built tools — these are not official GitHub
-> documentation, but several teams have found them useful when explaining
-> UBB to admins and developers.
+> Community / partner-built tools and articles — these are not official
+> GitHub documentation, but several teams have found them useful when
+> explaining UBB to admins and developers.
 
-- **UBB Resources (interactive tools)** — Animated explainer, 21 budget
-  flow scenarios, decision tree, budget calculator, and model-selection
-  playbook.
-  [white-cliff-095e8700f.7.azurestaticapps.net](https://white-cliff-095e8700f.7.azurestaticapps.net/index.html)
-- **Token-optimizer (interactive showcase)** — Scenarios, framework
-  diagram, pricing calculator, and model-selection playbook for token
-  optimization across AI coding workloads.
-  [ashy-dune-0b4215a0f.7.azurestaticapps.net](https://ashy-dune-0b4215a0f.7.azurestaticapps.net/detailed/index.html#/home)
-- **UBB Checklist (by Tim Corr)** — Step-by-step rollout checklist
-  grouped by timing and role, with local progress tracking.
-  [tjcorr.github.io/ubb-checklist](https://tjcorr.github.io/ubb-checklist/checklist.html)
+- **Copilot Cost Compass (interactive tool)** — Animated UBB explainer,
+  budget-flow scenarios, decision tree, budget calculator, and a
+  model-selection playbook for token optimization across AI coding
+  workloads.
+  [aka.ms/ubb-tool](https://aka.ms/ubb-tool)
+- **Make every token count (article, by Ve Sharma)** — Why agent quality —
+  not raw token frugality — is the better way to optimize Copilot spend
+  under UBB. Long-form companion to the token-optimization workshop, with
+  practical controls: context balance, reasoning-vs-implementation model
+  selection, and deterministic guardrails (tests, linters, security scans).
+  [dev.to/vevarunsharma](https://dev.to/vevarunsharma/make-every-token-count-why-agent-quality-is-the-better-way-to-optimize-spend-2b9g)
 
 ---
 
@@ -175,6 +175,4 @@ preparing their rollout:
 
 Questions, portco-specific scenarios, or workshop nominations? Reach the
 GitHub @ CSI team at
-[DevsAtCSI@microsoft.com](mailto:DevsAtCSI@microsoft.com),
-or open an issue using the templates in
-[.github/ISSUE_TEMPLATE](../.github/ISSUE_TEMPLATE).
+[DevsAtCSI@microsoft.com](mailto:DevsAtCSI@microsoft.com)
