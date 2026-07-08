@@ -16,13 +16,13 @@
 
 | 🚚 Migrate | 🤖 Adopt | 📈 Scale |
 |---|---|---|
-| Move to GitHub from Bitbucket / Azure DevOps / GitLab / SVN → [GitHub Migrations](#-github-migrations) | Onboard GitHub Copilot in your team → [Learning & Skilling](#-github-copilot--learning--skilling) | Run GitHub & Copilot across your portco at scale → [Governance & Architecture](#-governance--architecture) |
+| Move to GitHub from Bitbucket / Azure DevOps / GitLab / SVN → [GitHub Migrations](#-github-migrations) | Level up your team with agentic workflows → [Agentic Workflows](#-agentic-workflows) | Run GitHub & Copilot across your portco at scale → [Governance & Architecture](#-governance--architecture) |
 
 </div>
 
-> 💡 **CSI portcos:** use your CSI discount on GitHub Enterprise and GitHub
-> Copilot when billed via your portfolio's (or CSI's) Azure subscription —
-> **not** a credit card.
+> 💡 **CSI portcos:** use your CSI discount — **up to 35%** — on GitHub
+> Enterprise and GitHub Copilot when billed via your portfolio's (or CSI's)
+> Azure subscription — **not** a credit card.
 > → [How to claim the discount](#-csi-pricing-via-azure-billing)
 
 ---
@@ -41,10 +41,11 @@ product teams.
 > 🎥 **Catch up on past sessions** — full CSI Dev Days recording playlist →
 > [aka.ms/CSIDevDaysRecordings](https://aka.ms/CSIDevDaysRecordings)
 
-- **Sign up & upcoming sessions** → [aka.ms/CSIDevDaysSignUp](https://aka.ms/CSIDevDaysSignUp)
-- **Next sessions:**
-  - **CSI Dev Days! #2** — June 18 — [Register on Teams](https://msit.events.teams.microsoft.com/event/msit.751fb5b1-363f-4598-8571-871b4b041d1f@72f988bf-86f1-41af-91ab-2d7cd011db47)
-  - **CSI Dev Days! #3** — July 2 — [Register on Teams](https://msit.events.teams.microsoft.com/event/msit.54a3b104-2d6a-4382-a731-6b8b1627a504@72f988bf-86f1-41af-91ab-2d7cd011db47)
+- **Upcoming sessions — register by track:**
+  - **Developer Track** — [Register on Teams](https://msit.events.teams.microsoft.com/event/msit.dda67489-f2cc-4a33-b0dd-7f4606e8bd52@72f988bf-86f1-41af-91ab-2d7cd011db47)
+  - **Product Track** — [Register on Teams](https://msit.events.teams.microsoft.com/event/msit.b8cadf85-d534-4ab5-858f-0f9c496a7ece@72f988bf-86f1-41af-91ab-2d7cd011db47)
+  - **QA Track** — [Register on Teams](https://msit.events.teams.microsoft.com/event/msit.a2d45802-3163-4650-b8bf-11415c76ff8d@72f988bf-86f1-41af-91ab-2d7cd011db47)
+  - **DevSecOps Track** — [Register on Teams](https://msit.events.teams.microsoft.com/event/msit.8099c99d-25de-42a3-b378-af01fe473797@72f988bf-86f1-41af-91ab-2d7cd011db47)
 
 ---
 
@@ -58,11 +59,6 @@ GitLab, and Subversion.
 > first. We'll match you with the right tooling, runbook, and (if needed)
 > migration partner — instead of you piecing it together from docs alone.
 
-> 📝 **Already decided to move?** Kick off the engagement by filling out the
-> [Volaris Migrate to GitHub signup form](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRzMcMidQhp9MgQdQoHo9OjdURDVTTFNHOFpLQlpYTFZPQ1Y4RzMyR0s3Ni4u)
-> — the GitHub @ CSI team uses this to scope, prioritize, and pair you with
-> the right migration support.
-
 For self-serve reading:
 
 - **GitHub Enterprise migration overview** — [docs.github.com/migrations](https://docs.github.com/en/migrations)
@@ -70,32 +66,29 @@ For self-serve reading:
 
 ---
 
-## 📚 GitHub Copilot — Learning & Skilling
+## 🤖 Agentic Workflows
 
-#### Self-paced & curated
-- **Awesome Copilot — Learning Hub** — Structured learning paths for every level. [awesome-copilot.github.com/learning-hub](https://awesome-copilot.github.com/learning-hub/)
-- **Awesome Copilot (site)** — Community-curated index of prompts, instructions, chat modes, and extensions. [awesome-copilot.github.com](https://awesome-copilot.github.com/)
-- **Awesome Copilot (repo)** — Source repo for the above. [github.com/github/awesome-copilot](https://github.com/github/awesome-copilot)
+For teams maturing beyond interactive Copilot into automated, agent-driven
+development:
 
-#### Hands-on
-- **GitHub Copilot Tutorials** — Official short-form tutorials by scenario and language. [docs.github.com/en/copilot/tutorials](https://docs.github.com/en/copilot/tutorials)
-- **GitHub Copilot Labs (Microsoft Learn)** — Step-by-step lab environment. [microsoftlearning.github.io/mslearn-github-copilot-dev](https://microsoftlearning.github.io/mslearn-github-copilot-dev/)
-
-#### Reference
-- **GitHub Documentation** — Full GitHub product documentation, including Copilot. [docs.github.com](https://docs.github.com/en)
-- **GitHub Changelog** — Authoritative source for everything that ships across GitHub and Copilot. [github.blog/changelog](https://github.blog/changelog/)
-
-#### Video
-- **GitHub Upskilling Playlists on YouTube** — Official GitHub channel with Copilot deep-dives, demos, and conference talks. [youtube.com/@GitHub/playlists](https://www.youtube.com/@GitHub/playlists)
+- **GitHub Agentic Workflows (gh-aw)** — Author agentic workflows as
+  natural-language Markdown that run as automation in GitHub Actions. Bring
+  your own agent access — you can use your existing **Claude Code**, **Codex**,
+  and **Cursor** keys with it. [github.github.com/gh-aw](https://github.github.com/gh-aw/)
 
 ---
 
 ## 🏷 CSI Pricing via Azure Billing
 
-CSI portfolio companies qualify for a **CSI discount on GitHub Enterprise
-Cloud and GitHub Copilot (Business and Enterprise)** — but **only when
-billing flows through an Azure subscription tied to your portco, your
+CSI portfolio companies qualify for a **CSI discount of up to 35% on GitHub
+Enterprise Cloud and GitHub Copilot (Business and Enterprise)** — but **only
+when billing flows through an Azure subscription tied to your portco, your
 operating group, or CSI**.
+
+> 🏷 **What the discount covers:** up to **35%** off **GitHub** and **GitHub
+> Copilot**, including the usage-based **tokens from the default models used
+> in GitHub** — Anthropic Claude, OpenAI GPT, Google Gemini, MAI, Kimi, and
+> more.
 
 > 📧 **Want the discount amount and how to activate it?** Email
 > [DevsAtCSI@microsoft.com](mailto:DevsAtCSI@microsoft.com).
@@ -130,6 +123,24 @@ operating group, or CSI**.
 
 See [Connecting an Azure subscription (docs.github.com)](https://docs.github.com/en/enterprise-cloud@latest/billing/how-tos/set-up-payment/connect-azure-sub) for the step-by-step procedure.
 
+#### Check whether your discount is active
+
+You can confirm the CSI discount is applied from the
+[Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator):
+
+1. Sign in with the account tied to your portfolio's Azure billing.
+2. Open the **Licensing program** dropdown.
+3. If the discount is active, your **licensing agreement with Microsoft — tied
+   back to your portfolio** — appears as your selected agreement, similar to the
+   example below.
+
+![Azure Pricing Calculator Licensing program dropdown showing a Microsoft licensing agreement tied to a CSI portfolio company](./images/reproduced_ea_1234567.png)
+
+If you **don't** see a Microsoft licensing agreement tied to your portfolio,
+the discount isn't active yet. Email
+[DevsAtCSI@microsoft.com](mailto:DevsAtCSI@microsoft.com)
+and the GitHub @ CSI team will kick off the process to get it set up.
+
 #### Documentation
 
 - **About enterprise billing** — Concepts and supported payment methods. [docs.github.com](https://docs.github.com/en/enterprise-cloud@latest/enterprise-onboarding/getting-started-with-your-enterprise/about-enterprise-billing)
@@ -158,6 +169,7 @@ Resources to help CSI portcos prepare for Copilot's move to usage-based
 billing on June 1.
 
 - **🌐 GitHub @ CSI team recommendations** — Practical playbook for CSI portcos: what's changing June 1, a 5-step rollout plan, what not to overreact to, how UBB interacts with the CSI Azure-billing discount, and curated UBB resources including interactive tools and checklists. [usage-based-billing/](./usage-based-billing/)
+- **Copilot Cost Compass (interactive tool)** — Animated UBB explainer, budget-flow scenarios, decision tree, budget calculator, and a model-selection playbook for token optimization. [aka.ms/ubb-tool](https://aka.ms/ubb-tool)
 - **Announcement (blog)** — GitHub Copilot is moving to usage-based billing. [github.blog](https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/)
 - **UBB documentation** — Concept docs for usage-based billing in organizations and enterprises. [docs.github.com](https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-organizations-and-enterprises)
 - **UBB pricing & models** — Reference for Copilot billing models and pricing. [docs.github.com](https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing)

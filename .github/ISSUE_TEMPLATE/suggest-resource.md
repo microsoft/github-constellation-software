@@ -19,7 +19,7 @@ Pick the README section you think fits best (or suggest a new one):
 - [ ] CSI Dev Days
 - [ ] GitHub Migrations
 - [ ] CSI Pricing (Azure Billing)
-- [ ] GitHub Copilot — Learning & Skilling
+- [ ] Agentic Workflows
 - [ ] Usage-Based Billing (UBB)
 - [ ] Governance & Architecture
 - [ ] Other / new section — please describe:
