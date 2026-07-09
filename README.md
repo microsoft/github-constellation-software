@@ -20,7 +20,7 @@
 
 </div>
 
-> 💡 **CSI portcos:** use your CSI discount — **up to 35%** — on GitHub
+> 💡 **CSI portcos:** use your **large CSI discount** on GitHub
 > Enterprise and GitHub Copilot when billed via your portfolio's (or CSI's)
 > Azure subscription — **not** a credit card.
 > → [How to claim the discount](#-csi-pricing-via-azure-billing)
@@ -80,15 +80,15 @@ development:
 
 ## 🏷 CSI Pricing via Azure Billing
 
-CSI portfolio companies qualify for a **CSI discount of up to 35% on GitHub
+CSI portfolio companies qualify for a **large CSI discount on GitHub
 Enterprise Cloud and GitHub Copilot (Business and Enterprise)** — but **only
 when billing flows through an Azure subscription tied to your portco, your
 operating group, or CSI**.
 
-> 🏷 **What the discount covers:** up to **35%** off **GitHub** and **GitHub
-> Copilot**, including the usage-based **tokens from the default models used
-> in GitHub** — Anthropic Claude, OpenAI GPT, Google Gemini, MAI, Kimi, and
-> more.
+> 🏷 **What the discount covers:** a **large discount** on **GitHub** and
+> **GitHub Copilot**, including the usage-based **tokens from the default
+> models used in GitHub** — Anthropic Claude, OpenAI GPT, Google Gemini, MAI,
+> Kimi, and more.
 
 > 📧 **Want the discount amount and how to activate it?** Email
 > [DevsAtCSI@microsoft.com](mailto:DevsAtCSI@microsoft.com).
