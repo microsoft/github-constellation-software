@@ -27,22 +27,23 @@
 
 ---
 <div align="center">
-<img width="1920" height="1080" alt="CSI Dev Days" src="https://github.com/user-attachments/assets/3cdfe17d-da99-4145-8928-efdc6712bedc" />
+<img width="1920" height="1080" alt="CSI Build Days" src="https://github.com/user-attachments/assets/61043f12-d664-4c4a-9622-d125f105bb4a" />
 </div>
 
-## 📅 CSI Dev Days
 
-CSI Dev Days is the GitHub @ CSI team's **bi-weekly developer event series**
+## 📅 CSI Build Days
+
+CSI Build Days is the GitHub & Microsoft @ CSI team's **bi-weekly developer event series**
 for engineers across the Constellation Software portfolio. Sessions cover
 GitHub fundamentals, migrations, Copilot enablement, agentic workflows,
 multi-part workshops, office hours, and Q&A with Microsoft and GitHub
 product teams.
 
-> 🎥 **Catch up on past sessions** — full CSI Dev Days recording playlist →
+> 🎥 **Catch up on past sessions** — full CSI Build Days recording playlist →
 > [aka.ms/CSIDevDaysRecordings](https://aka.ms/CSIDevDaysRecordings)
 
 - **Upcoming sessions — register by track:**
-  - **Developer Track** — [Register on Teams](https://msit.events.teams.microsoft.com/event/msit.dda67489-f2cc-4a33-b0dd-7f4606e8bd52@72f988bf-86f1-41af-91ab-2d7cd011db47)
+  - **Developer Track** — Completed ✔️
   - **Product Track** — [Register on Teams](https://msit.events.teams.microsoft.com/event/msit.b8cadf85-d534-4ab5-858f-0f9c496a7ece@72f988bf-86f1-41af-91ab-2d7cd011db47)
   - **QA Track** — [Register on Teams](https://msit.events.teams.microsoft.com/event/msit.a2d45802-3163-4650-b8bf-11415c76ff8d@72f988bf-86f1-41af-91ab-2d7cd011db47)
   - **DevSecOps Track** — [Register on Teams](https://msit.events.teams.microsoft.com/event/msit.8099c99d-25de-42a3-b378-af01fe473797@72f988bf-86f1-41af-91ab-2d7cd011db47)
