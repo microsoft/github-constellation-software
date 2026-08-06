@@ -51,6 +51,20 @@ internal SharePoint, or any portco-internal authentication. This is a
 ❌ Resources unrelated to GitHub, GitHub Copilot, or to enterprise adoption
 thereof.
 
+## Preview the GitHub Pages site
+
+The site renders `README.md` and `usage-based-billing/README.md` directly, so
+content changes stay synchronized between the repository and GitHub Pages.
+Use Node.js 22 or later to run it locally:
+
+```bash
+npm ci
+npm run dev
+```
+
+Run `npm run build` before submitting changes to the site shell in `src/`.
+Merges to `main` are deployed by the GitHub Pages workflow.
+
 ## Microsoft Contributor License Agreement
 
 Most contributions require you to agree to a Microsoft Contributor License
