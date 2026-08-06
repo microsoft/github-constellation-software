@@ -267,9 +267,12 @@ a {
 }
 
 .readme-content > div[align='center']:first-child img {
-  max-height: 120px;
+  width: min(100%, 360px);
+  height: auto;
+  max-height: none;
   margin: 0;
   border: 0;
+  object-fit: contain;
   box-shadow: none;
 }
 
