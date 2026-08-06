@@ -1,8 +1,9 @@
-import {useMemo, useState} from 'react'
+import {useEffect, useMemo, useState} from 'react'
 import type {ComponentPropsWithoutRef, ReactNode} from 'react'
 import {
   ArrowUpIcon,
   BookIcon,
+  CalendarIcon,
   CodeIcon,
   CreditCardIcon,
   DeviceDesktopIcon,
@@ -13,6 +14,7 @@ import {
   MoonIcon,
   RepoIcon,
   SunIcon,
+  TagIcon,
 } from '@primer/octicons-react'
 import {BaseStyles, Button, IconButton, Label, Link, ThemeProvider} from '@primer/react'
 import ReactMarkdown from 'react-markdown'
@@ -20,14 +22,17 @@ import rehypeRaw from 'rehype-raw'
 import rehypeSanitize, {defaultSchema} from 'rehype-sanitize'
 import rehypeSlug from 'rehype-slug'
 import remarkGfm from 'remark-gfm'
-import {getTableOfContents, pages} from './content'
-import type {PageId} from './content'
+import {getTableOfContents, isPageId, pages} from './content'
+import type {PageId, TableOfContentsItem} from './content'
 
 type ColorMode = 'auto' | 'day' | 'night'
+type MarkdownExtraProps = {node?: unknown}
 
 const repositoryUrl = 'https://github.com/microsoft/github-constellation-software'
-const pageId = document.body.dataset.page === 'usage-based-billing' ? 'usage-based-billing' : 'home'
+const requestedPageId = document.body.dataset.page
+const pageId: PageId = isPageId(requestedPageId) ? requestedPageId : 'home'
 const siteRoot = document.body.dataset.siteRoot ?? './'
+const themeStorageKey = 'github-csi-color-mode'
 const imageModules = import.meta.glob<string>('../images/**/*', {
   eager: true,
   import: 'default',
@@ -55,25 +60,68 @@ const themeOptions: Array<{
   {mode: 'night', label: 'Use dark theme', icon: MoonIcon},
 ]
 
+const navigationItems: Array<{
+  id: PageId
+  description: string
+  icon: typeof HomeIcon
+}> = [
+  {id: 'home', description: 'Migrations, adoption, and scale', icon: HomeIcon},
+  {id: 'build-days', description: 'Sessions and recordings', icon: CalendarIcon},
+  {id: 'csi-pricing', description: 'Azure billing and discounts', icon: TagIcon},
+  {id: 'usage-based-billing', description: 'Copilot UBB playbook', icon: CreditCardIcon},
+]
+
+function getInitialThemeIndex() {
+  const storedMode = window.localStorage.getItem(themeStorageKey)
+  const storedIndex = themeOptions.findIndex(option => option.mode === storedMode)
+  return storedIndex >= 0 ? storedIndex : 0
+}
+
+function resolveRepositoryPath(href: string) {
+  const [path, fragment] = href.split('#', 2)
+  const sourceDirectory = pages[pageId].sourcePath.split('/').slice(0, -1)
+  const segments = [...sourceDirectory]
+
+  for (const segment of path.replace(/^\.\//, '').split('/')) {
+    if (!segment || segment === '.') {
+      continue
+    }
+    if (segment === '..') {
+      segments.pop()
+    } else {
+      segments.push(segment)
+    }
+  }
+
+  const resolvedPath = segments.join('/')
+  return `${repositoryUrl}/blob/main/${resolvedPath}${fragment ? `#${fragment}` : ''}`
+}
+
 function normalizeHref(href: string | undefined) {
   if (!href) {
     return undefined
+  }
+
+  if (href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) {
+    return href
   }
 
   if (href.startsWith('../README.md')) {
     return `${siteRoot}${href.slice('../README.md'.length)}`
   }
 
-  if (href === './usage-based-billing/' || href === 'usage-based-billing/') {
-    return `${siteRoot}usage-based-billing/`
+  const pageRoute = href.match(/^(?:\.\/|\.\.\/)?(build-days|csi-pricing|usage-based-billing)\/?(#.*)?$/)
+  if (pageRoute) {
+    const [, route, fragment = ''] = pageRoute
+    return `${siteRoot}${route}/${fragment}`
   }
 
   if (href === '.github/ISSUE_TEMPLATE') {
     return `${repositoryUrl}/issues/new/choose`
   }
 
-  if (/^(CONTRIBUTING|CODE_OF_CONDUCT|SECURITY|SUPPORT|LICENSE)\.md(?:#.*)?$/.test(href)) {
-    return `${repositoryUrl}/blob/main/${href}`
+  if (/^(?:\.\/|\.\.\/)?[^?#]+\.md(?:#.*)?$/.test(href)) {
+    return resolveRepositoryPath(href)
   }
 
   return href
@@ -83,7 +131,12 @@ function isExternalHref(href: string | undefined) {
   return Boolean(href && /^https?:\/\//.test(href))
 }
 
-function MarkdownLink({href, children, ...props}: ComponentPropsWithoutRef<'a'>) {
+function MarkdownLink({
+  node: _node,
+  href,
+  children,
+  ...props
+}: ComponentPropsWithoutRef<'a'> & MarkdownExtraProps) {
   const normalizedHref = normalizeHref(href)
   const external = isExternalHref(normalizedHref)
 
@@ -100,7 +153,12 @@ function MarkdownLink({href, children, ...props}: ComponentPropsWithoutRef<'a'>)
   )
 }
 
-function MarkdownImage({src, alt, ...props}: ComponentPropsWithoutRef<'img'>) {
+function MarkdownImage({
+  node: _node,
+  src,
+  alt,
+  ...props
+}: ComponentPropsWithoutRef<'img'> & MarkdownExtraProps) {
   const imageKey = src?.replace('../images/', './images/')
   const resolvedSrc = (imageKey && localImages.get(imageKey)) || src
 
@@ -109,13 +167,14 @@ function MarkdownImage({src, alt, ...props}: ComponentPropsWithoutRef<'img'>) {
 
 function AnchoredHeading({
   as: Heading,
+  node: _node,
   id,
   children,
   ...props
 }: ComponentPropsWithoutRef<'h2'> & {
   as: 'h2' | 'h3'
   children?: ReactNode
-}) {
+} & MarkdownExtraProps) {
   return (
     <Heading {...props} id={id}>
       {children}
@@ -129,39 +188,24 @@ function AnchoredHeading({
 }
 
 function SiteNavigation({currentPage}: {currentPage: PageId}) {
-  const links = [
-    {
-      id: 'home' as const,
-      label: 'Resource hub',
-      description: 'Migrations, adoption, and scale',
-      href: siteRoot,
-      icon: HomeIcon,
-    },
-    {
-      id: 'usage-based-billing' as const,
-      label: 'Usage-based billing',
-      description: 'Copilot UBB playbook',
-      href: `${siteRoot}usage-based-billing/`,
-      icon: CreditCardIcon,
-    },
-  ]
-
   return (
     <nav className="site-nav" aria-label="Site navigation">
       <p className="nav-heading">Explore</p>
-      {links.map(item => {
+      {navigationItems.map(item => {
         const Icon = item.icon
+        const page = pages[item.id]
+        const href = page.route ? `${siteRoot}${page.route}/` : siteRoot
         return (
           <a
             className="nav-item"
             data-active={item.id === currentPage ? 'true' : undefined}
-            href={item.href}
+            href={href}
             aria-current={item.id === currentPage ? 'page' : undefined}
             key={item.id}
           >
             <Icon size={18} aria-hidden="true" />
             <span>
-              <strong>{item.label}</strong>
+              <strong>{page.label}</strong>
               <small>{item.description}</small>
             </span>
           </a>
@@ -193,9 +237,7 @@ function SiteNavigation({currentPage}: {currentPage: PageId}) {
   )
 }
 
-function TableOfContents({markdown}: {markdown: string}) {
-  const items = useMemo(() => getTableOfContents(markdown), [markdown])
-
+function TableOfContents({items}: {items: TableOfContentsItem[]}) {
   return (
     <nav className="toc" aria-label="On this page">
       <p className="nav-heading">On this page</p>
@@ -211,20 +253,38 @@ function TableOfContents({markdown}: {markdown: string}) {
 }
 
 function App() {
-  const [themeIndex, setThemeIndex] = useState(0)
+  const [themeIndex, setThemeIndex] = useState(getInitialThemeIndex)
   const currentTheme = themeOptions[themeIndex]
   const page = pages[pageId]
   const tableOfContents = useMemo(() => getTableOfContents(page.markdown), [page.markdown])
 
   const cycleTheme = () => {
-    setThemeIndex(currentIndex => (currentIndex + 1) % themeOptions.length)
+    setThemeIndex(currentIndex => {
+      const nextIndex = (currentIndex + 1) % themeOptions.length
+      window.localStorage.setItem(themeStorageKey, themeOptions[nextIndex].mode)
+      return nextIndex
+    })
   }
+
+  useEffect(() => {
+    const scrollToHash = () => {
+      const targetId = decodeURIComponent(window.location.hash.slice(1))
+      if (!targetId) {
+        return
+      }
+      window.requestAnimationFrame(() => document.getElementById(targetId)?.scrollIntoView())
+    }
+
+    scrollToHash()
+    window.addEventListener('hashchange', scrollToHash)
+    return () => window.removeEventListener('hashchange', scrollToHash)
+  }, [])
 
   const ThemeIcon = currentTheme.icon
 
   return (
     <ThemeProvider colorMode={currentTheme.mode} dayScheme="light" nightScheme="dark">
-      <BaseStyles className="site-root">
+      <BaseStyles className={`site-root page-${pageId}`}>
         <a className="skip-link" href="#readme-content">
           Skip to content
         </a>
@@ -318,7 +378,7 @@ function App() {
           </main>
 
           <aside className="toc-sidebar">
-            <TableOfContents markdown={page.markdown} />
+            <TableOfContents items={tableOfContents} />
           </aside>
         </div>
 

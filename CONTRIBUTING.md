@@ -44,16 +44,20 @@ governance, documentation, customer stories).
 
 ✅ Community resources that meet a high quality bar.
 
-❌ Internal-only material — anything requiring Microsoft corporate SSO,
-internal SharePoint, or any portco-internal authentication. This is a
-**public** hub.
+⚠️ Authenticated resources are exceptional. They must be clearly labeled with
+their sign-in requirement and paired with a public alternative or enough
+public context to remain useful.
+
+❌ Internal-only material presented without an access warning or public
+alternative. This is a **public** hub.
 
 ❌ Resources unrelated to GitHub, GitHub Copilot, or to enterprise adoption
 thereof.
 
 ## Preview the GitHub Pages site
 
-The site renders `README.md` and `usage-based-billing/README.md` directly, so
+The site renders `README.md`, `build-days/README.md`,
+`csi-pricing/README.md`, and `usage-based-billing/README.md` directly, so
 content changes stay synchronized between the repository and GitHub Pages.
 Use Node.js 22 or later to run it locally:
 

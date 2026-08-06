@@ -10,6 +10,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         home: resolve(process.cwd(), 'index.html'),
+        buildDays: resolve(process.cwd(), 'build-days/index.html'),
+        csiPricing: resolve(process.cwd(), 'csi-pricing/index.html'),
         usageBasedBilling: resolve(process.cwd(), 'usage-based-billing/index.html'),
       },
       output: {
