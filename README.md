@@ -2,8 +2,6 @@
 <img width="474" height="138" alt="ms+gh" src="https://github.com/user-attachments/assets/fcd7622d-50bd-4080-8361-27add0d3e650" />
 </div>
 
-<div align="center">
-
 # GitHub @ Constellation Software
 
 > A curated public hub of **GitHub** and **GitHub Copilot** resources for
@@ -17,8 +15,6 @@
 | 🚚 Migrate | 🤖 Adopt | 📈 Scale |
 |---|---|---|
 | Move to GitHub from Bitbucket / Azure DevOps / GitLab / SVN → [GitHub Migrations](#-github-migrations) | Level up your team with agentic workflows → [Agentic Workflows](#-agentic-workflows) | Run GitHub & Copilot across your portco at scale → [Governance & Architecture](#-governance--architecture) |
-
-</div>
 
 > 💡 **CSI portcos:** use your **large CSI discount** on GitHub
 > Enterprise and GitHub Copilot when billed via your portfolio's (or CSI's)

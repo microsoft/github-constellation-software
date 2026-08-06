@@ -66,7 +66,10 @@ npm ci
 npm run dev
 ```
 
-Run `npm run build` before submitting changes to the site shell in `src/`.
+Read and follow [`DESIGN.md`](DESIGN.md) before changing the site shell,
+layout, responsive behavior, or visual components. Run
+`npm run design:lint` after changing the design contract and
+`npm run build` before submitting changes to the site shell in `src/`.
 Merges to `main` are deployed by the GitHub Pages workflow.
 
 ## Microsoft Contributor License Agreement
