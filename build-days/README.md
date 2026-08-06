@@ -7,6 +7,8 @@ Sessions cover GitHub fundamentals, migrations, Copilot enablement, agentic
 workflows, hands-on workshops, office hours, and Q&A with Microsoft and GitHub
 product teams.
 
+![CSI Build Days event series](https://github.com/user-attachments/assets/61043f12-d664-4c4a-9622-d125f105bb4a)
+
 [← Back to the resource hub](../README.md#-csi-build-days)
 
 ---
