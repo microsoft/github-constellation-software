@@ -139,6 +139,15 @@ The **customer billing usage report is live as of May 12**. The links
 below collect the most useful UBB references for CSI portco admins
 preparing their rollout:
 
+- **GitHub Copilot is moving to usage-based billing (announcement)** —
+  Overview of the billing change and the motivation behind it.
+  [github.blog](https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/)
+- **Usage-based billing for organizations and enterprises (docs)** —
+  Conceptual overview of the new billing model.
+  [docs.github.com](https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-organizations-and-enterprises)
+- **Copilot billing models and pricing (reference)** — Included usage,
+  model pricing, and billing reference.
+  [docs.github.com](https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing)
 - **April reports are now available (changelog, May 12)** — Announces the
   customer-facing billing usage report.
   [github.blog/changelog](https://github.blog/changelog/2026-05-12-april-reports-are-now-available-to-prepare-for-usage-based-billing/)
@@ -150,6 +159,9 @@ preparing their rollout:
   [github.com/orgs/community/discussions/192948](https://github.com/orgs/community/discussions/192948)
 - **Webinar recap (on-demand video)** — Recap of the UBB customer briefing.
   [github.ondemand.goldcast.io](https://github.ondemand.goldcast.io/on-demand/9c23608e-dc81-41f3-82c2-6629c9a26f36)
+- **Copilot code review billing changelog** — Code review starts consuming
+  GitHub Actions minutes on June 1, 2026.
+  [github.blog/changelog](https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026/)
 
 ### Interactive tools, articles & checklists
 

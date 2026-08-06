@@ -373,6 +373,36 @@ a {
   background: var(--bgColor-muted, #f6f8fa);
 }
 
+.page-build-days .readme-content table th {
+  background: var(--bgColor-muted, #f6f8fa);
+}
+
+.page-build-days .readme-content table td:first-child {
+  width: 22%;
+  white-space: nowrap;
+}
+
+.page-build-days .readme-content a[href*='events.teams.microsoft.com'],
+.page-build-days .readme-content a[href*='microsoft-my.sharepoint.com'] {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  padding: 5px 10px;
+  border: var(--borderWidth-thin, 1px) solid var(--borderColor-accent-emphasis, #0969da);
+  border-radius: var(--borderRadius-medium, 6px);
+  background: var(--bgColor-accent-muted, #ddf4ff);
+  font-size: var(--text-body-size-small, 12px);
+  font-weight: var(--base-text-weight-semibold, 600);
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.page-build-days .readme-content a[href*='events.teams.microsoft.com']:hover,
+.page-build-days .readme-content a[href*='microsoft-my.sharepoint.com']:hover {
+  color: var(--fgColor-onEmphasis, #ffffff);
+  background: var(--bgColor-accent-emphasis, #0969da);
+}
+
 .readme-content img {
   height: auto;
   border: var(--borderWidth-thin, 1px) solid var(--borderColor-muted, #d8dee4);
@@ -517,10 +547,14 @@ a {
   }
 
   .mobile-nav {
+    position: sticky;
+    z-index: 15;
+    top: 64px;
     display: block;
     overflow-x: auto;
     border-bottom: var(--borderWidth-thin, 1px) solid var(--borderColor-muted, #d8dee4);
     background: var(--bgColor-default, #ffffff);
+    scrollbar-width: thin;
   }
 
   .mobile-nav .site-nav {
@@ -578,6 +612,10 @@ a {
   .readme-content table {
     display: block;
     overflow-x: auto;
+  }
+
+  .page-build-days .readme-content table td:first-child {
+    width: auto;
   }
 
   .site-footer {
