@@ -15,16 +15,23 @@ export default defineConfig({
         usageBasedBilling: resolve(process.cwd(), 'usage-based-billing/index.html'),
       },
       output: {
-        manualChunks: {
-          markdown: [
-            'github-slugger',
-            'react-markdown',
-            'rehype-raw',
-            'rehype-sanitize',
-            'rehype-slug',
-            'remark-gfm',
-          ],
-          primer: ['@primer/octicons-react', '@primer/react'],
+        manualChunks(id) {
+          if (
+            id.includes('github-slugger') ||
+            id.includes('react-markdown') ||
+            id.includes('rehype-raw') ||
+            id.includes('rehype-sanitize') ||
+            id.includes('rehype-slug') ||
+            id.includes('remark-gfm')
+          ) {
+            return 'markdown'
+          }
+
+          if (id.includes('@primer/octicons-react') || id.includes('@primer/react')) {
+            return 'primer'
+          }
+
+          return undefined
         },
       },
     },
