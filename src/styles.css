@@ -403,6 +403,10 @@ a {
   box-shadow: var(--shadow-resting-small);
 }
 
+.page-ai-enablement .readme-content img {
+  box-sizing: border-box;
+}
+
 .readme-content hr {
   height: var(--borderWidth-thin);
   margin: var(--base-size-48) 0;

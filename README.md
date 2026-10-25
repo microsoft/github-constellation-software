@@ -4,9 +4,9 @@
 
 # GitHub @ Constellation Software
 
-> A curated public hub of **GitHub** and **GitHub Copilot** resources for
-> Constellation Software Inc. (CSI) portfolio companies — maintained by the
-> **GitHub @ CSI team at Microsoft**.
+> A curated public hub of **GitHub**, **GitHub Copilot**, and **Microsoft AI
+> enablement** resources for Constellation Software Inc. (CSI) portfolio
+> companies — maintained by the **GitHub @ CSI team at Microsoft**.
 
 ---
 
@@ -29,6 +29,16 @@ across the portfolio together for hands-on sessions, workshops, office hours,
 and product-team Q&A.
 
 **[Register for upcoming tracks and watch previous sessions →](./build-days/)**
+
+---
+
+## CSI AI Enablement
+
+A separate Microsoft AI learning series for CSI teams, covering AI strategy,
+Fabric and data readiness, Microsoft Foundry, application modernization,
+AI partnerships, and AI-native software engineering with GitHub Copilot.
+
+**[Explore the series, session topics, and registration links →](./ai-enablement/)**
 
 ---
 

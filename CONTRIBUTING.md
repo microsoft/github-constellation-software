@@ -1,10 +1,10 @@
 # Contributing
 
 Thanks for helping make this hub better! This repository is a curated
-collection of GitHub and GitHub Copilot resources for the **Constellation
-Software Inc. (CSI) portfolio company community**. Contributions of new
-resources, fixes to broken links, and improvements to descriptions are all
-welcome.
+collection of GitHub, GitHub Copilot, and Microsoft AI enablement resources
+for the **Constellation Software Inc. (CSI) portfolio company community**.
+Contributions of new resources, fixes to broken links, and improvements to
+descriptions are all welcome.
 
 ## Ways to contribute
 
@@ -40,6 +40,9 @@ Typo, unclear description, or out-of-date information? PRs are welcome.
 CSI portcos and their engineering teams (events, migrations, learning,
 governance, documentation, customer stories).
 
+✅ Microsoft AI enablement resources supporting the CSI series: AI strategy,
+data readiness, Microsoft Foundry, modernization, and AI-native engineering.
+
 ✅ Microsoft-published or GitHub-published material.
 
 ✅ Community resources that meet a high quality bar.
@@ -51,15 +54,16 @@ public context to remain useful.
 ❌ Internal-only material presented without an access warning or public
 alternative. This is a **public** hub.
 
-❌ Resources unrelated to GitHub, GitHub Copilot, or to enterprise adoption
-thereof.
+❌ Resources unrelated to GitHub, GitHub Copilot, their enterprise adoption,
+or the CSI Microsoft AI enablement series.
 
 ## Preview the GitHub Pages site
 
 The site renders `README.md`, `build-days/README.md`,
-`csi-pricing/README.md`, and `usage-based-billing/README.md` directly, so
-content changes stay synchronized between the repository and GitHub Pages.
-Use Node.js 22 or later to run it locally:
+`ai-enablement/README.md`, `csi-pricing/README.md`, and
+`usage-based-billing/README.md` directly, so content changes stay synchronized
+between the repository and GitHub Pages. Use Node.js 22 or later to run it
+locally:
 
 ```bash
 npm ci
