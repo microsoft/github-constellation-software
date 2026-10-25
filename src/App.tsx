@@ -8,6 +8,7 @@ import {
   CreditCardIcon,
   DeviceDesktopIcon,
   HomeIcon,
+  LightBulbIcon,
   LinkExternalIcon,
   LinkIcon,
   MarkGithubIcon,
@@ -67,6 +68,7 @@ const navigationItems: Array<{
 }> = [
   {id: 'home', description: 'Migrations, adoption, and scale', icon: HomeIcon},
   {id: 'build-days', description: 'Sessions and recordings', icon: CalendarIcon},
+  {id: 'ai-enablement', description: 'AI strategy and technical enablement', icon: LightBulbIcon},
   {id: 'csi-pricing', description: 'Azure billing and discounts', icon: TagIcon},
   {id: 'usage-based-billing', description: 'Copilot UBB playbook', icon: CreditCardIcon},
 ]
@@ -110,7 +112,9 @@ function normalizeHref(href: string | undefined) {
     return `${siteRoot}${href.slice('../README.md'.length)}`
   }
 
-  const pageRoute = href.match(/^(?:\.\/|\.\.\/)?(build-days|csi-pricing|usage-based-billing)\/?(#.*)?$/)
+  const pageRoute = href.match(
+    /^(?:\.\/|\.\.\/)?(build-days|ai-enablement|csi-pricing|usage-based-billing)\/?(#.*)?$/,
+  )
   if (pageRoute) {
     const [, route, fragment = ''] = pageRoute
     return `${siteRoot}${route}/${fragment}`

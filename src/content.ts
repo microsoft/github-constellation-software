@@ -1,10 +1,17 @@
 import GithubSlugger from 'github-slugger'
+import aiEnablementReadme from '../ai-enablement/README.md?raw'
 import buildDaysReadme from '../build-days/README.md?raw'
 import csiPricingReadme from '../csi-pricing/README.md?raw'
 import rootReadme from '../README.md?raw'
 import usageBasedBillingReadme from '../usage-based-billing/README.md?raw'
 
-export const pageIds = ['home', 'build-days', 'csi-pricing', 'usage-based-billing'] as const
+export const pageIds = [
+  'home',
+  'build-days',
+  'ai-enablement',
+  'csi-pricing',
+  'usage-based-billing',
+] as const
 export type PageId = (typeof pageIds)[number]
 
 export type PageContent = {
@@ -40,6 +47,15 @@ export const pages: Record<PageId, PageContent> = {
     description: 'Register for upcoming tracks and catch up on previous sessions.',
     markdown: buildDaysReadme,
     sourcePath: 'build-days/README.md',
+  },
+  'ai-enablement': {
+    id: 'ai-enablement',
+    route: 'ai-enablement',
+    label: 'CSI AI Enablement',
+    eyebrow: 'Microsoft AI learning series',
+    description: 'Explore the full series, session topics, and registration links.',
+    markdown: aiEnablementReadme,
+    sourcePath: 'ai-enablement/README.md',
   },
   'csi-pricing': {
     id: 'csi-pricing',
